@@ -1,6 +1,9 @@
 .app__section2 {
   padding: 5rem 8rem;
   background-color: var(--dark-theme);
+  @media screen and(max-width:900px) {
+    padding: 4rem 1rem;
+  }
 }
 
 .app__section2-firstRow {
@@ -31,8 +34,46 @@
     text-decoration: none;
     color: var(--primary-color);
   }
+  @media screen and(max-width:900px) {
+    display: none;
+  }
 }
+.app__section2-lastRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .app__section2-firstRow-price {
+    text-align: center;
+    padding: 2rem 0;
 
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      width: 100%;
+      span {
+        color: #66c166;
+      }
+    }
+  }
+  button {
+    background: linear-gradient(to right, #004d00, #01301e);
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 2px solid linear-gradient(100deg, var(--secondary-color) 10%, #004d00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  @media screen and(min-width:900px) {
+    display: none;
+  }
+}
 .app__section2-heading {
   margin: 4rem 0 1rem 0;
   font-size: 2.5rem;
@@ -40,11 +81,16 @@
   span {
     color: var(--secondary-color);
   }
+  @media screen and (max-width: 900px) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 
 .app__section2-features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .app__features {
   align-items: flex-start;
@@ -77,21 +123,71 @@
       }
     }
   }
+  @media screen and(max-width:900px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 .app__section2-coin {
   margin: auto;
-  border-radius: 50%;
-  border: 1px solid black;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and(max-width:900px) {
+    display: none;
+  }
 }
 .feature__coinlines {
-  position: absolute;
-
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   .shape1 {
-    height: 2px;
-    background-color: var(--line-color);
     margin-left: 100%;
-    color: var(--line-color);
+    margin-top: 25px;
+    height: 70px;
     width: 150px;
+    border-top: 2px solid var(--line-color);
+    border-left: 2px solid var(--line-color);
+    -moz-transform: skew(-45deg);
+    -webkit-transform: skew(-45deg);
+    transform: skew(-45deg);
+    position: absolute;
+  }
+  .shape2 {
+    margin-left: -120%;
+    margin-top: 25px;
+    height: 50px;
+    width: 250px;
+    border-top: 2px solid var(--line-color);
+    border-right: 2px solid var(--line-color);
+    -moz-transform: skew(-45deg);
+    -webkit-transform: skew(-45deg);
+    transform: skew(-135deg);
+    position: absolute;
+  }
+  .shape3 {
+    margin-left: -120%;
+    margin-bottom: 100px;
+    height: 50px;
+    width: 230px;
+    border-bottom: 2px solid var(--line-color);
+    border-right: 2px solid var(--line-color);
+    -moz-transform: skew(-45deg);
+    -webkit-transform: skew(-45deg);
+    transform: skew(-45deg);
+    position: absolute;
+  }
+}
+.app__section2-coinmobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 7rem;
+    height: 7rem;
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
   }
 }

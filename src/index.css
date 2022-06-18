@@ -12,7 +12,7 @@
   --btn-color: #004d00;
   --partner-card: #eff3f9;
   --partner-owner-card: linear-gradient(to right, #eff3f9, #fff);
-  --line-color: black;
+  --line-color: grey;
 }
 @media (prefers-color-scheme: light) {
   body {
@@ -22,6 +22,7 @@
   :root {
     --partner-card: #eff3f9;
     --partner-owner-card: linear-gradient(to right, #eff3f9, #fff);
+    --line-color: grey;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -32,5 +33,6 @@
   :root {
     --partner-card: #1b334e;
     --partner-owner-card: linear-gradient(to right, #1b334e, #021326);
+    --line-color: white;
   }
 }

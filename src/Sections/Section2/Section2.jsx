@@ -5,7 +5,7 @@ import "./Section2.scss";
 const Section2 = () => {
   return (
     <div className="app__section2">
-      <div className="app__section2-firstRow ">
+      <div className="app__section2-firstRow">
         <div className="app__section2-firstRow-price">
           <h1>
             $9,449,627.26 <span>Dividends</span>
@@ -13,6 +13,9 @@ const Section2 = () => {
           <small>Paid out to Hatom Token holders over 3 years</small>
         </div>
         <button className="app__section2-firstRow-buyToken">Buy Hotam Tokens</button>
+      </div>
+      <div className="app__section2-coinmobile">
+        <img src={images.lightcoin} alt="coin" />
       </div>
       <div className="app__section2-heading">
         <span>Features</span> of Hatom Protocol
@@ -34,11 +37,15 @@ const Section2 = () => {
           </div>
         </div>
 
-        <div className="app__section2-coin">
+        <div className="app__section2-coin removeonmobile">
           <div className="feature__coinlines">
-            <hr className="shape1" />
+            <div class="shape1"></div>
+            <div class="shape2"></div>
           </div>
           <img src={images.lightcoin} alt="coin" />
+          <div className="feature__coinlines">
+            <div class="shape3"></div>
+          </div>
         </div>
         <div className="app__features">
           <div className="feature">
@@ -58,6 +65,15 @@ const Section2 = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="app__section2-lastRow">
+        <div className="app__section2-firstRow-price">
+          <h1>
+            $9,449,627.26 <span>Dividends</span>
+          </h1>
+          <small>Paid out to Hatom Token holders over 3 years</small>
+        </div>
+        <button className="app__section2-firstRow-buyToken">Buy Hotam Tokens</button>
       </div>
     </div>
   );
