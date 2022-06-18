@@ -1,0 +1,32 @@
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__buttonClass {
+  background: linear-gradient(to right, #028c02, #01301e);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid linear-gradient(100deg, var(--secondary-color) 10%, #004d00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.removeonmobile {
+  display: block;
+}
+.removeondesktop {
+  display: none;
+}
+@media screen and(max-width:900px) {
+  .removeonmobile {
+    display: none;
+  }
+  .removeondesktop {
+    display: block;
+  }
+}

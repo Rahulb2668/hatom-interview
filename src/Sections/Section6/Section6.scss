@@ -1,0 +1,45 @@
+.app__section6 {
+  height: 40vh;
+  background-color: #031222;
+  color: white;
+  @media screen and(max-width:900px) {
+    flex-wrap: wrap;
+    height: auto;
+    .app__section6-disclaimer {
+      width: 100%;
+    }
+  }
+}
+
+.app__section6-disclaimer {
+  flex-direction: column;
+  flex: 1;
+  padding-left: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  button {
+    margin-top: 1rem;
+    width: 200px;
+  }
+  @media screen and(max-width:900px) {
+    padding: 2.5rem 0;
+  }
+}
+.app__section6-animation {
+  div {
+    margin: 0 0 !important;
+    svg {
+      height: 39vh !important;
+      @media screen and (max-width: 900px) {
+        height: 41vh !important;
+        transform: rotate(90deg) !important;
+      }
+    }
+  }
+}

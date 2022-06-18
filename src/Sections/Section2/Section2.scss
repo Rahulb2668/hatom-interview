@@ -1,0 +1,34 @@
+.app__section2 {
+  padding: 2rem 3rem;
+  background-color: var(--dark-theme);
+}
+
+.app__section2-firstRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .app__section2-firstRow-price {
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+      span {
+        color: #66c166;
+      }
+    }
+  }
+  button {
+    background: linear-gradient(to right, #004d00, #01301e);
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 2px solid linear-gradient(100deg, var(--secondary-color) 10%, #004d00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+}

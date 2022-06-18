@@ -1,0 +1,107 @@
+.app__section4 {
+  background-color: --background-color;
+  color: --text-color;
+}
+.app__section4-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 8rem 8rem 0 8rem;
+  color: black;
+  position: relative;
+  // background-color: var(--primary-color);
+  h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  @media screen and(max-width:900px) {
+    padding: 4rem 2rem 0 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.app__section4-animations {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 3rem 8rem;
+  .content {
+    padding: 0.5rem 3rem;
+    margin-bottom: 3.22rem;
+    width: 65%;
+    background: linear-gradient(to right, #eff3f9, #fff);
+    span {
+      display: block;
+      border: none;
+      background: -webkit-gradient(
+        linear,
+        0 0,
+        100% 0,
+        from(transparent),
+        to(transparent),
+        color-stop(50%, #043d4a)
+      );
+      height: 2px;
+      width: 100%;
+    }
+    .span1 {
+      margin: 2rem 0rem 2rem 8rem;
+      @media screen and (max-width: 900px) {
+        margin: 1rem 0rem 1rem 4rem;
+      }
+    }
+    .span2 {
+      margin: 2rem 8rem 2rem 0rem;
+    }
+    .content-details {
+      p {
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 180%;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 900px) {
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+      h3 {
+        color: var(--secondary-color);
+        font-weight: 600;
+        font-size: 1rem;
+        @media screen and (max-width: 900px) {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      padding: 1rem 0rem 1rem 2rem;
+    }
+  }
+  .animation {
+    position: absolute;
+    right: 0;
+    top: -130px;
+    div {
+      height: 30% !important;
+      margin: 0px 0px !important;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      svg {
+        width: 80% !important;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,109 @@
+.app__section4-partnerSwipper {
+  padding: 2rem 8rem 2rem 8rem;
+  @media screen and(max-width:900px) {
+    padding: 6rem 1rem 3rem 1rem;
+  }
+}
+.app__section4-partners {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  z-index: 2;
+
+  div {
+    padding: 2rem;
+    width: 100%;
+    background-color: #eff3f9;
+    img {
+      width: 15rem;
+      height: 5rem;
+      max-height: 12rem;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 900px) {
+        max-height: unset;
+        height: 3rem;
+        width: 6rem;
+        margin-bottom: 0rem;
+      }
+    }
+    h5 {
+      margin: 1rem 0;
+      @media screen and (max-width: 900px) {
+        margin: 0.5rem 0;
+      }
+    }
+    p {
+      padding: 0;
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      line-height: 150%;
+      margin-bottom: 1.2rem;
+    }
+    a {
+      margin-top: 1rem;
+      color: var(--secondary-color);
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 5px;
+        font-size: 0.8rem;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      padding: 1rem;
+    }
+  }
+}
+.app__section4-arrows {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+  div {
+    img {
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+  @media screen and(max-width:900px) {
+    display: none;
+  }
+}
+.app__section4-partners-horizontalSlider {
+  @media screen and(max-width:900px) {
+    display: none;
+  }
+}
+.app__section4-partners-verticalslider {
+  position: relative;
+  height: 500px;
+  .swiper {
+    position: absolute !important;
+    width: 100%;
+    height: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+
+    .swiper-slide {
+      overflow: hidden;
+      border-radius: 15px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}

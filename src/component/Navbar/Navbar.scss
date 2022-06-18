@@ -1,0 +1,150 @@
+.app__navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  background: transparent;
+  border: none;
+  z-index: 2;
+  background-color: var(--dark-primary-color);
+  @media screen and (max-width: 900px) {
+    padding: 1rem 1rem 3.5rem 1rem;
+  }
+}
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+
+    @media screen and(min-width :2000px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  span {
+    color: var(--primary-color);
+    margin-left: 10px;
+  }
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  li {
+    margin: 0 0.7rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      text-transform: capitalize;
+      flex-direction: column;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2px;
+      }
+    }
+    div {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+    &:hover {
+      div {
+        background-color: green;
+      }
+    }
+  }
+
+  @media screen and(max-width:900px) {
+    display: none;
+  }
+}
+
+.app__navbar-menu {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+.app__navbar-mobileBtn {
+  background: linear-gradient(to right, #66c166, #0e6b47);
+  border-radius: 3px;
+
+  width: 8rem;
+  height: 2rem;
+  padding: 3px 10px;
+  margin-right: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+  @media screen and (max-width: 400px) {
+    width: 5rem;
+    margin-right: 5px;
+  }
+}
+
+.app__navbar-appBtn {
+  background: linear-gradient(100deg, rgba(49, 12, 183, 0.99), #004d00);
+  border-radius: 3px;
+  padding: 1.5px;
+
+  button {
+    background: linear-gradient(to right, #004d00, #01301e);
+    padding: 0.8rem 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid linear-gradient(100deg, var(--secondary-color) 10%, #004d00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
