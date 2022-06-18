@@ -10,7 +10,8 @@
   --secondary-color: #3555f7;
   --dark-primary-color: #021326;
   --btn-color: #004d00;
-  --partner-card: eff3f9;
+  --partner-card: #eff3f9;
+  --partner-owner-card: linear-gradient(to right, #eff3f9, #fff);
 }
 @media (prefers-color-scheme: light) {
   body {
@@ -18,7 +19,8 @@
     color: #333;
   }
   :root {
-    --partner-card: eff3f9;
+    --partner-card: #eff3f9;
+    --partner-owner-card: linear-gradient(to right, #eff3f9, #fff);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -28,5 +30,6 @@
   }
   :root {
     --partner-card: #1b334e;
+    --partner-owner-card: linear-gradient(to right, #1b334e, #021326);
   }
 }
