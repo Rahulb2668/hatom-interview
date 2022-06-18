@@ -11,9 +11,15 @@
   --dark-primary-color: #021326;
   --btn-color: #004d00;
 }
-@media (prefers-color-scheme: dark) {
-  :root{
-   --background-color : #031222
-   --text-color:white
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #333;
   }
- }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #021326;
+    color: #fff;
+  }
+}
