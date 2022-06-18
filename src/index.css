@@ -10,16 +10,23 @@
   --secondary-color: #3555f7;
   --dark-primary-color: #021326;
   --btn-color: #004d00;
+  --partner-card: eff3f9;
 }
 @media (prefers-color-scheme: light) {
   body {
     background: #fff;
     color: #333;
   }
+  :root {
+    --partner-card: eff3f9;
+  }
 }
 @media (prefers-color-scheme: dark) {
   body {
     background: #021326;
     color: #fff;
+  }
+  :root {
+    --partner-card: #1b334e;
   }
 }
