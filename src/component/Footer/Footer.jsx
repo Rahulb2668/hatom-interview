@@ -19,21 +19,29 @@ const Footer = () => {
           <img src={images.logo} alt="" />
           <div className="app__footer-links-col app__flex">
             <h3>Protocol</h3>
-            {["Market", "Price", "Docs"].map((item) => (
-              <a href="/">{item}</a>
+            {["Market", "Price", "Docs"].map((item, index) => (
+              <a href="/" key={`${item}-${index}`}>
+                {item}
+              </a>
             ))}
           </div>
           <div className="app__footer-links-col  app__flex">
             <h3>Governance</h3>
-            {["Overview", "Hatom Token"].map((item) => (
-              <a href="/">{item}</a>
+            {["Overview", "Hatom Token"].map((item, index) => (
+              <a href="/" key={`${item}-${index}`}>
+                {item}
+              </a>
             ))}
           </div>
           <div className="app__footer-links-col  app__flex">
             <h3>Security</h3>
-            {["Audits", "Formal Verifications", "Economic Security", "Bug Bounty"].map((item) => (
-              <a href="/">{item}</a>
-            ))}
+            {["Audits", "Formal Verifications", "Economic Security", "Bug Bounty"].map(
+              (item, index) => (
+                <a href="/" key={`${item}-${index}`}>
+                  {item}
+                </a>
+              )
+            )}
           </div>
           <div className="app__navbar-appBtn">
             <button>App</button>

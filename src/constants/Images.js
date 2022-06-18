@@ -12,6 +12,7 @@ import section4Arrow1 from "../assets/Images/section4Arrow1.svg";
 import section4Arrow2 from "../assets/Images/section4Arrow2.svg";
 import maiar from "../assets/Images/img3.svg";
 import ratherlabs from "../assets/Images/img2.svg";
+import lightcoin from "../assets/Images/lightcoin.svg";
 
 const images = {
   people,
@@ -28,6 +29,7 @@ const images = {
   section4Arrow2,
   maiar,
   ratherlabs,
+  lightcoin,
 };
 
 export default images;
