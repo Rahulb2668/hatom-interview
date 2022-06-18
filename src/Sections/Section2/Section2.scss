@@ -100,12 +100,18 @@
       margin-top: 2.5rem;
       font-size: 2.5rem;
       padding-bottom: 20px;
+      @media screen and(max-width:900px) {
+        padding-bottom: 5px;
+      }
     }
     p {
       font-size: 1rem;
       font-weight: 400;
       line-height: 150%;
       padding: 10px 0px;
+      @media screen and (max-width: 900px) {
+        padding: 0px;
+      }
     }
     ul {
       margin-left: 2rem;
@@ -120,6 +126,13 @@
           width: 10px;
           margin-inline: -15px 5px;
         }
+        @media screen and(max-width:900px) {
+          padding-top: 10px;
+          margin-left: 0;
+        }
+      }
+      @media screen and(max-width:900px) {
+        margin-left: 1rem;
       }
     }
   }
@@ -143,38 +156,32 @@
   align-items: center;
   justify-content: space-between;
   .shape1 {
-    margin-left: 100%;
-    margin-top: 25px;
-    height: 70px;
-    width: 150px;
+    top: -151px;
+    right: 5px;
+    height: 58px;
+    width: 279px;
     border-top: 2px solid var(--line-color);
-    border-left: 2px solid var(--line-color);
-    -moz-transform: skew(-45deg);
-    -webkit-transform: skew(-45deg);
-    transform: skew(-45deg);
+    border-right: 2px solid var(--line-color);
+    transform: skew(44deg);
     position: absolute;
   }
   .shape2 {
-    margin-left: -120%;
-    margin-top: 25px;
-    height: 50px;
-    width: 250px;
-    border-top: 2px solid var(--line-color);
+    top: 37px;
+    right: 23px;
+    height: 63px;
+    width: 269px;
+    border-bottom: 2px solid var(--line-color);
     border-right: 2px solid var(--line-color);
-    -moz-transform: skew(-45deg);
-    -webkit-transform: skew(-45deg);
-    transform: skew(-135deg);
+    transform: skew(-45deg);
     position: absolute;
   }
   .shape3 {
-    margin-left: -120%;
-    margin-bottom: 100px;
-    height: 50px;
-    width: 230px;
-    border-bottom: 2px solid var(--line-color);
-    border-right: 2px solid var(--line-color);
-    -moz-transform: skew(-45deg);
-    -webkit-transform: skew(-45deg);
+    top: -144px;
+    right: -153px;
+    height: 84px;
+    width: 132px;
+    border-top: 2px solid var(--line-color);
+    border-left: 2px solid var(--line-color);
     transform: skew(-45deg);
     position: absolute;
   }
