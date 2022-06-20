@@ -36,9 +36,13 @@
   }
 }
 .app__section1-lottie {
+  position: relative;
   @media screen and (max-width: 400px) {
     svg {
       visibility: hidden !important;
     }
   }
+}
+.app__section1-coin {
+  position: absolute;
 }

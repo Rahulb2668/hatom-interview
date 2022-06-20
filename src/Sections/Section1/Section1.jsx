@@ -20,6 +20,7 @@ const Section1 = () => {
       </div>
       {/* <img src={images.bubbles} alt="" className="app__section1-mobileBubbles" /> */}
       <div className="app__section1-lottie">
+        {/* <img src={images.coin} alt="" className="app__section1-coin" /> */}
         <Lottie options={defaultOptions} />
       </div>
     </div>
